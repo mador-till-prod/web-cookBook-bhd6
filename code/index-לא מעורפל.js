@@ -2184,6 +2184,7 @@ let strCurrentTopic_learningPage = "subject1";
 let nCurrentTopicNumber = 0;
 let currentPicNum;
 let currentPicName;
+let currTopic;
 
 // consts
 const NUMBER_OF_PICTUERS = 83;
@@ -2383,7 +2384,7 @@ const showTopics = (event) => {
         arrTopic.push(topics);
     }
 
-    let currTopic = eval(`strCurrentTopic_${strCurrentPage}`)
+    currTopic = eval(`strCurrentTopic_${strCurrentPage}`)
 
     // מוריד בולד לקטגוריה הקודמת, שומר קטגוריה נוכחית ושם עליה בולד
     document.querySelector(`.${strCurrentPage} .${currTopic}`).classList.remove("bold");
